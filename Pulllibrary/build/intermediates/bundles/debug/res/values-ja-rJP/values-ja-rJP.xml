@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pull_to_current_refresh_time">リフレッシュ時間：</string>
+    <string name="pull_to_last_refresh_time">最後のリフレッシュタイム:</string>
+    <string name="pull_to_load_more">以上の負荷</string>
+    <string name="pull_to_no_data">のデータなし</string>
+    <string name="pull_to_refresh_pull_label">Pull down refresh…</string>
+    <string name="pull_to_refresh_refreshing_label">refreshing…</string>
+    <string name="pull_to_refresh_release_label">Release to Refresh…</string>
+    <string name="pull_to_refresh_time">リフレッシュ時間:</string>
+</resources>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:background="@drawable/recommend_item_bg"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/recommend_list_image"
+        android:layout_width="80dp"
+        android:layout_height="90dp"
+        android:background="@android:color/white"
+        android:layout_margin="10dp" />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/recommend_name"
+            android:textColor="@android:color/black"
+            android:textSize="16dp"
+            android:gravity="center_vertical"
+            android:text="杭州市余杭塘路XX号1000平米"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:text="价"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:textSize="10dp"
+                android:visibility="invisible"
+                android:background="@android:color/holo_blue_dark"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:id="@+id/recommend_price"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="35/m2/天"
+                android:visibility="invisible"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="5dp"
+                android:textSize="14dp"
+                android:gravity="center_vertical"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/recommend_insurance"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:textSize="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@android:color/white"
+                android:background="@android:color/holo_red_light"
+                android:text="保险"
+                />
+
+            <Button
+                android:id="@+id/recommend_envi"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:textSize="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@android:color/white"
+                android:background="@android:color/holo_blue_light"
+                android:text="存储环境"
+                />
+
+            <Button
+                android:id="@+id/recommend_maintain"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:textSize="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@android:color/white"
+                android:background="#ffff9800"
+                android:text="维护"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

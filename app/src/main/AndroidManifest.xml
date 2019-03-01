@@ -1,0 +1,112 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+    package="com.zwxt.shareApp">
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+     
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <application
+        android:allowBackup="true"
+        android:name=".ShareApplication"
+        android:icon="@mipmap/share_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="770516a7fedb021578e12c3c042134ba" />
+
+        <activity
+            android:name=".activity.LoadingActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize"
+            android:hardwareAccelerated="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activity.LoginActivity"/>
+
+        <activity android:name=".activity.HomeActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name=".activity.ThingsActivity"/>
+
+        <activity android:name=".activity.RegisterActivity"/>
+
+        <activity android:name=".activity.RecommendActivity"/>
+
+        <activity android:name=".activity.DetailsActivity"/>
+
+        <activity android:name=".activity.LocationSourceActivity"/>
+
+        <activity android:name=".activity.MailActivity"/>
+
+        <activity android:name=".activity.AddAddressActivity"/>
+
+        <activity android:name=".activity.CityChoiceActivity"/>
+
+        <activity android:name=".activity.MailFragmentActivity"/>
+
+        <activity android:name=".activity.OrderDetailsActivity"/>
+
+        <activity android:name=".activity.RenewalsActivity"/>
+
+        <activity android:name=".activity.GPSNaviActivity"/>
+
+        <activity android:name=".activity.ComplaintActivity"/>
+
+        <activity android:name=".activity.ComplainDetailActivity"/>
+
+        <activity android:name=".activity.CouponActivity"/>
+
+        <activity android:name=".activity.PayActivity"/>
+
+        <activity android:name=".wxapi.WXEntryActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="wx208df23f94de74db"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent"
+            android:launchMode="singleTop"/>
+
+        <activity android:name=".activity.PayDemoActivity"/>
+
+        <receiver
+            android:name=".AppRegister"
+            android:permission="com.tencent.mm.plugin.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.amap.api.location.APSService"></service>
+
+    </application>
+
+</manifest>

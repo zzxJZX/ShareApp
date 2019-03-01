@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation">
+    <!-- Just use standard Pull Down String when pulling up. These can be set for languages which require it -->
+    <string name="pull_to_refresh_pull_label">Pull down refresh…</string>
+    <string name="pull_to_refresh_release_label">Release to Refresh…</string>
+    <string name="pull_to_refresh_refreshing_label">refreshing…</string>
+  
+     <!-- 上下拉刷新 -->
+    <string name="pull_to_load_more">Load more</string>
+    <string name="pull_to_no_data">No data</string>
+    <string name="pull_to_current_refresh_time">Refresh time:</string>
+    <string name="pull_to_refresh_time">Refresh time:</string>
+    <string name="pull_to_last_refresh_time">Last refresh time:</string>
+</resources>

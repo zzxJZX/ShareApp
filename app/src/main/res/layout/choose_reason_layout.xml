@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:orientation="vertical"
+        android:background="@drawable/alert_item_bar"
+        android:layout_marginRight="50dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="选择原因"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:layout_marginTop="20dp"
+                android:id="@+id/logistics_problem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:text="物流问题" />
+
+            <RadioButton
+                android:layout_marginTop="10dp"
+                android:id="@+id/item_problem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:text="物品问题" />
+
+            <RadioButton
+                android:layout_marginTop="10dp"
+                android:id="@+id/other_problem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:text="其他问题" />
+
+        </RadioGroup>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="50dp">
+
+            <View
+                android:layout_width="fill_parent"
+                android:background="#9a9e9d"
+                android:layout_height="1px"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_weight="0"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/dialog_no"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/alert_btn_selector"
+                    android:text="取消"
+                    android:textColor="@color/title_btn_text_selector"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="fill_parent"
+                    android:background="#9a9e9d" />
+
+                <Button
+                    android:id="@+id/dialog_yes"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/alert_btn_selector"
+                    android:text="确认"
+                    android:textColor="@color/title_btn_text_selector"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

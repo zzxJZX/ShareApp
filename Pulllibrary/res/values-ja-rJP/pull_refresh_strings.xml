@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Just use standard Pull Down String when pulling up. These can be set for languages which require it -->
+    <string name="pull_to_refresh_pull_label">Pull down refresh…</string>
+    <string name="pull_to_refresh_release_label">Release to Refresh…</string>
+    <string name="pull_to_refresh_refreshing_label">refreshing…</string>
+  
+       <!-- 上下拉刷新 -->
+    <string name="pull_to_load_more">以上の負荷</string>
+    <string name="pull_to_no_data">のデータなし</string>
+    <string name="pull_to_current_refresh_time">リフレッシュ時間：</string>
+    <string name="pull_to_refresh_time">リフレッシュ時間:</string>
+    <string name="pull_to_last_refresh_time">最後のリフレッシュタイム:</string>
+    
+</resources>

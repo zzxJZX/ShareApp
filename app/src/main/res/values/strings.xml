@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">恒云仓</string>
+    <string name="other_accounts">其他账号登录</string>
+    <string name="get_vCode">获取验证码</string>
+    <string name="register_now">立即注册</string>
+    <string name="login">立即登录</string>
+    <string name="location_name">杭州</string>
+    <string name="search_ed_hint">请输入您想要找的仓库</string>
+    <string name="qr">扫一扫</string>
+    <string name="recommend">仓库推荐</string>
+    <string name="things">我的物品</string>
+    <string name="mail">寄件</string>
+    <string name="SpecialOffer">天天抢特价</string>
+    <string name="discount">更多优惠</string>
+    <string name="myStock">我的库存</string>
+    <string name="setForMy">我寄出的</string>
+    <string name="name">姓    名</string>
+    <string name="register">注册</string>
+
+    <string name="scan_qrcode_login">扫码登录</string>
+    <string name="enter">这是SDK_Sample的入口界面</string>
+    <string name="reg">将该app注册到微信</string>
+    <string name="goto_send">跳转到发消息界面</string>
+    <string name="launch_wx">启动微信</string>
+    <string name="check_timeline_supported">检查是否支持发送到朋友圈</string>
+
+
+    <string name="errcode_success">发送成功</string>
+    <string name="errcode_cancel">发送取消</string>
+    <string name="errcode_deny">发送被拒绝</string>
+    <string name="errcode_unsupported">不支持错误</string>
+    <string name="errcode_unknown">发送返回</string>
+
+    <string name="close">关闭</string>
+    <string name="select_time">选择时间</string>
+    <string name="yes">确定</string>
+
+    <string name="alert_hour">时</string>
+    <string name="alert_min">分</string>
+    <string name="alert_second">秒</string>
+    <string name="alert_year">年</string>
+    <string name="alert_month">月</string>
+    <string name="alert_day">日</string>
+
+
+    <string name="hint">提示</string>
+
+    <string name="cancel">取消</string>
+</resources>

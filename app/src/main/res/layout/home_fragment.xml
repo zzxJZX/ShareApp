@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.7">
+
+        <View
+            android:id="@+id/gone_title"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginBottom="10dp" />
+
+
+        <com.zwxt.shareApp.view.BannerView
+            android:id="@+id/bannerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gone_title"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/location_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/location_home"
+                android:gravity="center"
+                android:text="@string/location_name"
+                android:textColor="@android:color/white" />
+
+            <EditText
+                android:id="@+id/search_Warehouse_Ed"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:imeOptions="actionSearch"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/bg_edittext"
+                android:drawableRight="@drawable/share_home_search"
+                android:focusable="true"
+                android:hint="@string/search_ed_hint"
+                android:paddingLeft="20dp"
+                android:paddingRight="15dp"
+                android:textSize="13dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="共享仓库，便捷生活"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.8"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/qr_re"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:visibility="gone"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/qr_image"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/qr_image"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id="@+id/qr_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/qr_image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/qr"
+                android:textColor="@android:color/black"
+                android:textSize="11dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/recommend_re"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/recommend_image"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/recommend_image"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id="@+id/recommend_image_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recommend_image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/recommend"
+                android:textColor="@android:color/black"
+                android:textSize="11dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/things_re"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/things_image"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/things_image"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id="@+id/things_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/things_image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/things"
+                android:textColor="@android:color/black"
+                android:textSize="11dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mail_re"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/mail_image"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/mail_image"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id="@+id/mail_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mail_image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/mail"
+                android:textColor="@android:color/black"
+                android:textSize="11dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_marginTop="10dp"
+        android:layout_weight="2"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/red_home"
+                android:id="@+id/imageView2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:text="@string/SpecialOffer"
+                android:textColor="@android:color/black"
+                android:layout_toEndOf="@+id/imageView2"
+                android:layout_alignParentTop="true"
+                android:layout_alignBottom="@+id/imageView2"
+                android:id="@+id/textView3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/discount"
+                android:gravity="bottom"
+                android:textColor="@android:color/black"
+                android:id="@+id/textView2"
+                android:layout_toStartOf="@+id/imageView"
+                android:layout_alignParentTop="true"
+                android:layout_alignBottom="@+id/textView3" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/share_right"
+                android:id="@+id/imageView"
+                android:layout_alignParentTop="true"
+                android:layout_alignBottom="@+id/textView2" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#80bebebe" />
+
+
+        <com.zwxt.shareApp.view.NoScroolGridView
+            android:id="@+id/discount_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:horizontalSpacing="10dp"
+            android:numColumns="2"></com.zwxt.shareApp.view.NoScroolGridView>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.4"/>
+
+
+</LinearLayout>

@@ -1,0 +1,1104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="6.4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/round_shape_black"
+                        android:gravity="center"
+                        android:text="寄"
+                        android:textColor="@android:color/white"
+                        android:textSize="22dp" />
+                </RelativeLayout>
+
+
+                <EditText
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="8"
+                    android:background="@null"
+                    android:drawableRight="@drawable/share_right"
+                    android:hint="请填写寄件人的联系方式"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#80bebebe"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/round_shape_red"
+                        android:gravity="center"
+                        android:text="收"
+                        android:textColor="@android:color/white"
+                        android:textSize="22dp" />
+                </RelativeLayout>
+
+
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="8"
+                    android:background="@null"
+                    android:drawableRight="@drawable/share_right"
+                    android:hint="请填写收件人的联系方式"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageView3"
+                    android:layout_alignTop="@+id/imageView3"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toEndOf="@+id/imageView3"
+                    android:gravity="center"
+                    android:text="快递公司选择" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/red_home" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/red_home" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="*"
+                    android:textColor="#FB6E5B" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="取件地址" />
+
+                <EditText
+                    android:id="@+id/address_edit"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="4"
+                    android:background="@color/white"
+                    android:drawableRight="@drawable/share_right"
+                    android:focusable="false"
+                    android:hint="选择取件地址"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/red_home" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="*"
+                    android:textColor="#FB6E5B" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="仓库选择" />
+
+                <EditText
+                    android:id="@+id/house_check_edit"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="4"
+                    android:background="@color/white"
+                    android:drawableRight="@drawable/share_right"
+                    android:focusable="false"
+                    android:hint="选择仓库"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="5dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/red_home" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:text="*"
+                        android:textColor="#FB6E5B" />
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="仓库类型" />
+
+                    <Spinner
+                        android:id="@+id/house_type_spinner"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="4" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#80bebebe" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="5dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:visibility="invisible"
+                        android:src="@drawable/red_home" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:text="*"
+                        android:textColor="#FB6E5B" />
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="存入类型" />
+
+                    <Spinner
+                        android:id="@+id/save_type_spinner"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="4" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#80bebebe" />
+
+                <LinearLayout
+                    android:id="@+id/saveLin"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:focusable="true"
+                    android:visibility="gone"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="5dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/red_home"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:text="*"
+                        android:textColor="#FB6E5B" />
+
+                    <TextView
+                        android:id="@+id/save_type_text"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="出租价格" />
+
+                    <EditText
+                        android:id="@+id/save_type_edit"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="4"
+                        android:background="@color/white"
+                        android:focusable="true"
+                        android:hint="请填写出租价格(元/天)"
+                        android:inputType="number|numberDecimal"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#80bebebe" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="5dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/red_home"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:text="*"
+                        android:textColor="#FB6E5B" />
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="存储天数" />
+
+                    <EditText
+                        android:id="@+id/days_edit"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="4"
+                        android:background="@color/white"
+                        android:focusable="true"
+                        android:hint="请填写存储天数"
+                        android:inputType="number"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:visibility="gone"
+                    android:id="@+id/save_type_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#80bebebe" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="25dp"
+                        android:gravity="center"
+                        android:text="*"
+                        android:textColor="#FB6E5B" />
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="物品规格" />
+
+                    <Spinner
+                        android:id="@+id/goods_spinner"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="4" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#80bebebe" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="25dp"
+                        android:gravity="center"
+                        android:text="*"
+                        android:textColor="#FB6E5B" />
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="物品分类" />
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="4"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/goods_class_spinner_first"
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+                        <Spinner
+                            android:id="@+id/goods_class_spinner_second"
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+                        <Spinner
+                            android:id="@+id/goods_class_spinner_third"
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#80bebebe" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="25dp"
+                        android:gravity="center"
+                        android:text="*"
+                        android:textColor="#FB6E5B" />
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="物品维护" />
+
+                    <Spinner
+                        android:id="@+id/maintenance_type"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="4" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#80bebebe" />
+
+
+                <LinearLayout
+                    android:id="@+id/start_lin"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="25dp"
+                        android:gravity="center"
+                        android:text="*"
+                        android:textColor="#FB6E5B" />
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="维护开始" />
+
+                    <EditText
+                        android:id="@+id/maintenance_time_start_edit"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="4"
+                        android:background="@color/white"
+                        android:drawableRight="@drawable/share_right"
+                        android:focusable="false"
+                        android:hint="选择维护开始时间"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/start_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#80bebebe"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/end_lin"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="25dp"
+                        android:gravity="center"
+                        android:text="*"
+                        android:textColor="#FB6E5B" />
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="维护结束" />
+
+                    <EditText
+                        android:id="@+id/maintenance_time_end_edit"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="4"
+                        android:background="@color/white"
+                        android:drawableRight="@drawable/share_right"
+                        android:focusable="false"
+                        android:hint="选择维护结束时间"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/end_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#80bebebe"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="25dp"
+                        android:gravity="center"
+                        android:text="*"
+                        android:textColor="#FB6E5B" />
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="保险" />
+
+                    <Spinner
+                        android:id="@+id/stock_safe_spinner"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="4" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#80bebebe" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="5dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/red_home"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:text="*"
+                        android:textColor="#FB6E5B" />
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="取件时间" />
+
+                    <EditText
+                        android:id="@+id/logistics_time_edit"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="4"
+                        android:background="@color/white"
+                        android:drawableRight="@drawable/share_right"
+                        android:focusable="false"
+                        android:hint="选择取件时间"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#80bebebe" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="5dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/red_home"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:text="*"
+                        android:textColor="#FB6E5B" />
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="占用体积" />
+
+                    <EditText
+                        android:id="@+id/volume_edit"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="4"
+                        android:background="@color/white"
+                        android:focusable="true"
+                        android:hint="请填写占用体积（立方）"
+                        android:inputType="number|numberDecimal"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#80bebebe" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="5dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/red_home"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:text="*"
+                        android:textColor="#FB6E5B" />
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="备注" />
+
+                    <EditText
+                        android:id="@+id/remarks_edit"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="4"
+                        android:background="@color/white"
+                        android:focusable="true"
+                        android:hint="请填写备注"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#80bebebe" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="5dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/red_home"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:text="*"
+                        android:textColor="#FB6E5B" />
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="预算价格" />
+
+                    <TextView
+                        android:id="@+id/calculation_price_text"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="4"
+                        android:background="@color/white"
+                        android:focusable="true"
+                        android:gravity="center_vertical"
+                        android:hint="预算价格"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#80bebebe" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="5dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/red_home"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:text="*"
+                        android:textColor="#FB6E5B" />
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="优惠券" />
+
+                    <EditText
+                        android:id="@+id/coupon_check_edit"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="4"
+                        android:background="@color/white"
+                        android:drawableRight="@drawable/share_right"
+                        android:focusable="false"
+                        android:hint="选择优惠券"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#80bebebe" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="25dp"
+                        android:gravity="center"
+                        android:text="*"
+                        android:textColor="#FB6E5B" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="物品数量" />
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="4"
+                        android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/round_shape_gray"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:src="@drawable/reduce" />
+                        </RelativeLayout>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textColor="@android:color/holo_red_light"
+                            android:textSize="14dp" />
+
+                        <RelativeLayout
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/round_shape_red"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:src="@drawable/add_send" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#80bebebe" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:visibility="gone"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="25dp"
+                        android:gravity="center"
+                        android:text="*"
+                        android:textColor="#FB6E5B" />
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="付款方式" />
+
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="4"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/wechat_check"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="微信" />
+
+                        <CheckBox
+                            android:id="@+id/ali_check"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="支付宝" />
+
+                        <CheckBox
+                            android:id="@+id/balance_check"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="余额" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/apply_to_house_bt"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0.6"
+        android:background="@drawable/login_bt_s"
+        android:text="申请入库"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

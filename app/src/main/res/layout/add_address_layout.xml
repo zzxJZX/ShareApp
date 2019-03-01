@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/address_title"
+        android:layout_width="match_parent"
+        android:background="@color/bg"
+        android:layout_height="0dip" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="#FB6E5B">
+
+        <Button
+            android:id="@+id/add_address_back_bt"
+            android:layout_width="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@drawable/fanhui"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/mail"
+            android:textSize="18dp"
+            android:textColor="@android:color/white"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="10"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1.3"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:textColor="@android:color/black"
+                android:textSize="18dp"
+                android:text="姓       名"/>
+
+            <EditText
+                android:id="@+id/nameEdit"
+                android:layout_marginLeft="15dp"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:hint="请输入姓名"
+                android:background="@null"
+                android:layout_marginRight="20dp"
+                android:layout_weight="4"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/white"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1.3"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:textColor="@android:color/black"
+                android:textSize="17dp"
+                android:text="电话号码"/>
+
+            <EditText
+                android:id="@+id/phoneEdit"
+                android:layout_marginLeft="15dp"
+                android:layout_width="0dip"
+                android:layout_marginRight="20dp"
+                android:layout_height="match_parent"
+                android:hint="请输入电话号码"
+                android:background="@null"
+                android:layout_weight="4"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/white"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1.3"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:textColor="@android:color/black"
+                android:textSize="18dp"
+                android:text="所在地区"/>
+
+            <LinearLayout
+                android:id="@+id/regionEdit"
+                android:layout_marginLeft="15dp"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal"
+                android:layout_weight="4">
+
+                <Spinner
+                    android:id="@+id/province_spinner"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"></Spinner>
+
+                <Spinner
+                    android:id="@+id/city_spinner"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"></Spinner>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1.3"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:textColor="@android:color/black"
+                android:textSize="18dp"
+                android:text="详细地址"/>
+
+            <EditText
+                android:id="@+id/addressEdit"
+                android:layout_marginLeft="15dp"
+                android:layout_width="0dip"
+                android:layout_marginRight="20dp"
+                android:hint="请输入详细地址"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:layout_weight="4"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/save_address_bt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="160dp"
+                android:text="保存"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/register_bt"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

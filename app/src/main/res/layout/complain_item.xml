@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:elevation="3dp"
+    android:descendantFocusability="blocksDescendants"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <TextView
+            android:id="@+id/code_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="订单编号: EA22222222"
+            android:textColor="@android:color/black"
+            android:textSize="14dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/stock_head"
+            android:layout_toStartOf="@+id/stock_time_text"/>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_height="80dp">
+
+        <ImageView
+            android:id="@+id/complaint_image"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="#80bebebe" />
+
+        <TextView
+            android:id="@+id/complaint_text"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:text="投诉"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:gravity="left"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/state_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text=" 处理中"
+        android:textSize="14dp"
+        android:drawableLeft="@drawable/complain_item_image"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/navpage"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/details_bt"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:textSize="14dp"
+            android:text="查看详细"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="@color/bg"
+            android:background="@drawable/complain_bt_anim"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

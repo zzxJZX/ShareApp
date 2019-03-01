@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1.1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/money_free_text"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_above="@+id/money_total_text"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|bottom"
+                android:text="30¥"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/money_total_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal|bottom"
+                android:text="满1元可用"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical"
+            android:layout_weight="2">
+
+            <TextView
+                android:id="@+id/coupon_name_text"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:text="共享仓库"
+                android:gravity="center_vertical"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/time_end_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2018-87-82到期"
+                android:textSize="12dp"
+                android:gravity="bottom"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical"
+            android:layout_weight="1.1">
+
+            <TextView
+                android:id="@+id/remaining_time_text"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:text="限今日"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:textColor="@android:color/holo_red_light"
+                android:layout_weight="1.1"/>
+
+            <Button
+                android:id="@+id/user_bt"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:text="去使用"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/register_bt"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

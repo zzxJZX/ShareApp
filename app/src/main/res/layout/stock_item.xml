@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/stock_item_anim"
+    android:descendantFocusability="blocksDescendants"
+    android:elevation="3dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <com.zwxt.shareApp.view.CircleImageView
+            android:id="@+id/stock_head"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/t"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true" />
+        
+        <TextView
+            android:id="@+id/code_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="订单编号: EA22222222"
+            android:textColor="@android:color/black"
+            android:textSize="14dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/stock_head"
+            android:layout_toStartOf="@+id/stock_time_text"/>
+
+        <TextView
+            android:id="@+id/stock_time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="14dp"
+            android:gravity="center"
+            android:visibility="invisible"
+            android:textColor="@android:color/holo_green_dark"
+            android:text="剩余时间: 20天"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/stock_im"
+            android:layout_width="150dp"
+            android:layout_height="80dp" />
+
+        <TextView
+            android:id="@+id/complaint_text"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="投诉"
+            android:visibility="gone"
+            android:textSize="15dp"
+            android:gravity="right|center_vertical"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="55dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/insurance"
+            android:layout_width="40dp"
+            android:layout_height="21dp"
+            android:textSize="10dp"
+            android:visibility="gone"
+            android:layout_marginRight="10dp"
+            android:textColor="@android:color/white"
+            android:background="@android:color/holo_red_light"
+            android:text="保险"
+            />
+
+        <Button
+            android:id="@+id/thermostat"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="10dp"
+            android:textSize="10dp"
+            android:visibility="gone"
+            android:textColor="@android:color/white"
+            android:background="@android:color/holo_blue_light"
+            android:text="恒温柜"
+            />
+
+        <Button
+            android:id="@+id/maintain"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:textSize="10dp"
+            android:visibility="gone"
+            android:textColor="@android:color/white"
+            android:background="#ffff9800"
+            android:text="维护"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+            <Button
+                android:id="@+id/status_bt"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:textSize="10dp"
+                android:layout_marginRight="5dp"
+                android:textColor="@android:color/white"
+                android:background="#ffff9800"
+                android:layout_alignParentRight="true"
+                />
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <Button
+            android:id="@+id/contact"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:textSize="10dp"
+            android:text="联系仓管"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="@android:color/holo_blue_light"
+            android:background="@drawable/stock_anim"/>
+
+
+        <Button
+            android:id="@+id/takeOut"
+            android:layout_width="90dp"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/takeOut_bt2"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"
+            android:background="@drawable/stock_take_out_bt"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/takeOut_bt2"
+            android:layout_width="90dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/stock_take_out_bt"
+            android:text="申请提前出库"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

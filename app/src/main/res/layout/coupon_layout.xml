@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/coupon_title"
+        android:layout_width="match_parent"
+        android:background="@color/bg"
+        android:layout_height="0dip" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="@color/bg">
+
+        <Button
+            android:id="@+id/coupon_back_bt"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/fanhui" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="优惠券"
+            android:textColor="@android:color/white"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/coupon_list"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="0dip"
+        android:scrollbars="none"
+        android:layout_weight="10"/>
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false">
+        <layer-list>
+            <!-- 第一层 -->
+            <item >
+                <shape>
+                    <corners android:radius="5dip"/>
+                    <solid android:color="#33999999"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>
